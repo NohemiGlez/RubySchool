@@ -1,0 +1,35 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Email:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @user.email %>" disabled>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">First name:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @user.first_name %>" disabled>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Last name:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @user.last_name %>" disabled>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Date of Birth:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @user.date_of_birth %>" disabled>
+  </div>
+
+  <%= link_to 'Back', users_path, :class => "btn btn-outline-secondary" %>
+  <%= link_to 'Edit', edit_user_path(@user), :class => "btn btn-outline-info" %>
+  
+</div>

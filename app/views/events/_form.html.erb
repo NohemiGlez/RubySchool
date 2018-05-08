@@ -11,32 +11,35 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="container">
+    <div class="field form-group">
+      <%= form.label :name %>
+      <%= form.text_field :name, :class => "form-control" %>
+    </div>
+
+    <div class="field form-group">
+      <%= form.label :start_date %>
+      <%= form.text_field :start_date, :class => "form-control" %>
+    </div>
+
+    <div class="field form-group">
+      <%= form.label :end_date %>
+      <%= form.text_field :end_date, :class => "form-control" %>
+    </div>
+
+    <div class="field form-group">
+      <%= form.label :max_students %>
+      <%= form.number_field :max_students, :class => "form-control" %>
+    </div>
+
+    <div class="field form-group">
+      <%= form.label :description %>
+      <%= form.text_area :description, :class => "form-control" %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit :class => "btn btn-primary float-right" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :start_date %>
-    <%= form.text_field :start_date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :end_date %>
-    <%= form.text_field :end_date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :max_students %>
-    <%= form.number_field :max_students %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>

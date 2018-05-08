@@ -1,29 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Name:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @event.name %>" disabled>
+  </div>
 
-<p>
-  <strong>Start date:</strong>
-  <%= @event.start_date %>
-</p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Start date:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @event.start_date %>" disabled>
+  </div>
 
-<p>
-  <strong>End date:</strong>
-  <%= @event.end_date %>
-</p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">End date:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @event.end_date %>" disabled>
+  </div>
 
-<p>
-  <strong>Max students:</strong>
-  <%= @event.max_students %>
-</p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Max students:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @event.max_students %>" disabled>
+  </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Description:</span>
+    </div>
+    <input type="text" class="form-control" id="disabledInput" placeholder="<%= @event.description %>" disabled>
+  </div>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+  <%= link_to 'Back', events_path, :class => "btn btn-outline-secondary" %>
+  <%= link_to 'Edit', edit_event_path(@event), :class => "btn btn-outline-info" %>
+</div>
