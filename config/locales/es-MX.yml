@@ -12,6 +12,7 @@ es-MX:
         email: Correo electrónico
         password: Contraseña
         remember_me: Recuérdame
+        forgot_password: ¿Olvidaste tu contraseña
   date:
     abbr_day_names:
     - dom
